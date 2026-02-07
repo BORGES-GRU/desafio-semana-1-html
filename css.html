@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DEV-On</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV-On | Home</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
 </head>
 
 <body>
-  <div class="css__container">
-    <header class="css__topo">
-      <div class="css__title">
-        <h1>CSS3</h1>
-      </div>
-    </header>
-    <main class="css__cont">
-      <article class="css__post">
-        <h2>Origem</h2>
-        <p>
-          O CSS (Cascading Style Sheets) foi proposto em 1994 por Håkon Wium Lie e Bert Bos para separar a estrutura
-          (HTML) da apresentação visual dos sites. Oficialmente lançado pelo W3C em 1996 (CSS1), surgiu para solucionar
-          a limitação do HTML na formatação, permitindo cores, fontes e layouts avançados de forma eficiente e
-          responsiva.
-        </p>
+    <div class="main-wrapper">
+        <header>
+            <h1>CSS3</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dev-on.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <figure class="css__img">
-          <img src="./assets/img/css.png" alt="CSS e sua funçaõ" width="500" height="250">
-          <figcaption>imagem retirada do google</figcaption>
-        </figure>
-        <div class="data">Publicado em: 15 de Março de 2025</div>
-      </article>
+        <main class="content-area">
+            <article>
+              <h2>Origem</h2>
+              <p>
+                O CSS (Cascading Style Sheets) foi proposto em 1994 por Håkon Wium Lie e Bert Bos para separar a estrutura
+                (HTML) da apresentação visual dos sites. Oficialmente lançado pelo W3C em 1996 (CSS1), surgiu para solucionar
+                a limitação do HTML na formatação, permitindo cores, fontes e layouts avançados de forma eficiente e
+                responsiva.
+              </p>
 
-      <aside class="css__categories">
-        <h3>Categorias</h3>
-        <ul>
-          <li><a href="dev-on.html">Estudos de um DEV</a></li>
-          <li><a href="index.html">JavaScript</a></li>
-        </ul>
-      </aside>
-    </main>
-    <section class="css__coment">
-      <nav>
-        <form>
-          <label for="nome">nome</label>
-          <input type="text" name="nome" />
-          <label for="texto">comentário</label>
-          <input type="text" name="texto" />
-          <textarea name="texto"></textarea>
-          <button type="submit">enviar</button>
-        </form>
-      </nav>
-      <footer class="rodape">
-        <h4>Parceiria: <a target="_blank" href="https://shakersuniversity.com.br">Shakers University</a></h4>
-        <p>&copy;Shakers University</p>
-      </footer>
-    </section>
+              <figure class="css__img">
+                <img src="./assets/img/css.png" alt="CSS e sua funçaõ" width="500" height="250">
+                <figcaption>imagem retirada do google</figcaption>
+              </figure>
+              <div class="data">Publicado em: 15 de Março de 2025</div>
+            </article>
+
+            <aside>
+                <h3>Categorias</h3>
+                <nav>
+                    <ul>
+                        <li><a href="dev-on.html" style="background:none; color:var(--primary); padding:0;">Estudos de
+                                um DEV</a></li>
+                        <li><a href="css.html" style="background:none; color:var(--primary); padding:0;">CSS a
+                                História</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+
+        <section class="comment-section">
+            <h3>Deixe um comentário</h3>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome">
+                <label for="coment">Comentário:</label>
+                <textarea id="coment" placeholder="O que achou do post?"></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+        </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 DEV-On</p>
+            <h4>Parceria: <a target="_blank" href="https://shakersuniversity.com.br">Shakers University</a></h4>
+            <p>&copy;Shakers University</p>
+        </footer>
+    </div>
 </body>
-
 </html>
